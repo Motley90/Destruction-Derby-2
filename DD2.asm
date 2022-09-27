@@ -13,8 +13,8 @@ proc DllEntryPoint hinstDLL,fdwReason,lpvReserved
 endp
 ; Test
 proc SetCar
-        mov    eax, DWORD 0x467400      ; Some address
-        mov    BYTE [eax], 0x03         ; Some hex value
+        mov    eax, DWORD 0x467400      ; Race Car ID
+        mov    BYTE [eax], 0x03         ; Unused car ID
        ret
 
 endp
